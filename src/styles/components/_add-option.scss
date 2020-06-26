@@ -1,0 +1,21 @@
+.add-option {
+    display: flex;
+    margin-bottom : $s-size ;  
+    &__input {
+        flex-grow: 1;
+        margin-right: $s-size;
+        padding-left: $s-size;
+        color:$color-off-white ; 
+        background-color: $color-blue-dark; 
+        border : none ; 
+        border-bottom: solid .2rem transparent;
+        transition  : all ease-in-out .2s ; 
+        &:focus { 
+         outline: none; ;
+         border-bottom-color : $color-off-white;   
+        }
+        &:placeholder-shown { 
+            color : $color-off-white ; 
+        }
+    }
+}

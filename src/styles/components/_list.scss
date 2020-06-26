@@ -1,0 +1,21 @@
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: $s-size;
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        background: $color-blue-dark;
+        padding: $m-size;
+        color: $color-off-white;
+        word-break: break-all;
+
+        &:not(:last-child) {
+            margin-bottom: $s-size;
+        }
+        &__body { 
+            flex-grow: 1;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.wedgit {
+    display: flex;
+    justify-content: space-between;
+    background: $color-blue-dark;
+    padding: $m-size;
+    color: $color-off-white;
+    &__header {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+

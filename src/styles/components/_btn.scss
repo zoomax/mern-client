@@ -1,0 +1,41 @@
+.btn {
+    display: inline-block;
+    border-radius: 0px;
+    border: none;
+    padding: $s-size;
+    color: $color-white;
+    font-size: $m-size;
+    font-weight: 300;
+    cursor: pointer;
+    background : none ; 
+    opacity: 0.8;
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+    &--block {
+        display: block;
+        padding: 2.4rem;
+        width: 100%;
+        font-weight: 500;
+        font-size: $l-size;
+        margin-bottom : $l-size ; 
+    }
+    &--link  { 
+        padding : 0 ; 
+        border : none ; 
+        opacity : .5 ;  
+    }
+    &--purple {
+        background-color: $color-purple;
+        border-bottom: 0.6rem solid darken($color-purple, 10%);
+    }
+
+    &:hover {
+        opacity: 1;
+        transition: all ease-in-out 0.2s;
+    }
+    &:disabled {
+        opacity: 0.5;
+        cursor: default !important;
+    }
+}
